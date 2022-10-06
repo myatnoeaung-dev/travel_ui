@@ -24,7 +24,6 @@ class MyApp extends StatelessWidget {
 
         themeMode: ThemeMode.dark,
         home:const HomeScreen()
-        //home: const HomePageScreen(),
       );
     });
   }
