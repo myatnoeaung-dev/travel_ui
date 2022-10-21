@@ -3,6 +3,7 @@ import 'package:core_module/extensions.dart';
 
 Widget CategoryItems(BuildContext context) {
   return Container(
+    margin: EdgeInsets.symmetric(vertical: 20, horizontal: 16),
     height: 60,
     child: ListView(scrollDirection: Axis.horizontal, children: [
       CatetoriesItem(

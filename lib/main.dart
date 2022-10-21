@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:dynamic_color/dynamic_color.dart';
 import 'package:core_module/core_module/app_themes.dart';
-import 'package:travel_ui/home_screen.dart';
+import 'package:travel_ui/home/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
