@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         theme: AppTheme(lightDynamic).lightTheme(targetColor: Colors.amber),
         darkTheme: AppTheme(darkDynamic).darkTheme(targetColor: Colors.amber),
 
-        themeMode: ThemeMode.dark,
+        themeMode: ThemeMode.light,
         home:const HomeScreen()
       );
     });

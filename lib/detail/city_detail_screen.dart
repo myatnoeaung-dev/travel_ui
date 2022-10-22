@@ -59,30 +59,78 @@ class CityDetailScreen extends StatelessWidget {
                                 height:
                                     (MediaQuery.of(context).size.height / 2) -
                                         70,
-                                child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Container(
-                                        color: Colors.red,
-                                        height: 50,
-                                        width: 50,
-                                      ),
-                                      Container(
-                                        color: Colors.black,
-                                        height: 50,
-                                        width: 50,
-                                      ),
-                                      Container(
-                                        color: Colors.blue,
-                                        height: 50,
-                                        width: 50,
-                                      ),
-                                      Container(
-                                        color: Colors.red,
-                                        height: 50,
-                                        width: 50,
-                                      )
-                                    ]),
+                                child: Center(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        color: Colors.black38,
+                                        borderRadius:
+                                            BorderRadius.circular(20)),
+                                    padding: const EdgeInsets.all(10),
+                                    child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Container(
+                                            decoration: BoxDecoration(
+                                                image: const DecorationImage(
+                                                    fit: BoxFit.cover,
+                                                    image: CachedNetworkImageProvider(
+                                                        "https://th.bing.com/th/id/OIP.Ix6XjMbuCvoq3EQNgJoyEQHaFj?pid=ImgDet&rs=1")),
+                                                color: Colors.red,
+                                                borderRadius:
+                                                    BorderRadius.circular(10)),
+                                            height: 50,
+                                            width: 50,
+                                          ),
+                                          const SizedBox(
+                                            height: 10,
+                                          ),
+                                          Container(
+                                            decoration: BoxDecoration(
+                                                image: const DecorationImage(
+                                                    fit: BoxFit.cover,
+                                                    image: CachedNetworkImageProvider(
+                                                        "https://th.bing.com/th/id/OIP.Ix6XjMbuCvoq3EQNgJoyEQHaFj?pid=ImgDet&rs=1")),
+                                                color: Colors.red,
+                                                borderRadius:
+                                                    BorderRadius.circular(10)),
+                                            height: 50,
+                                            width: 50,
+                                          ),
+                                          const SizedBox(
+                                            height: 10,
+                                          ),
+                                          Container(
+                                            decoration: BoxDecoration(
+                                                image: const DecorationImage(
+                                                    fit: BoxFit.cover,
+                                                    image: CachedNetworkImageProvider(
+                                                        "https://th.bing.com/th/id/OIP.Ix6XjMbuCvoq3EQNgJoyEQHaFj?pid=ImgDet&rs=1")),
+                                                color: Colors.red,
+                                                borderRadius:
+                                                    BorderRadius.circular(10)),
+                                            height: 50,
+                                            width: 50,
+                                          ),
+                                          const SizedBox(
+                                            height: 10,
+                                          ),
+                                          Container(
+                                            decoration: BoxDecoration(
+                                                image: const DecorationImage(
+                                                    fit: BoxFit.cover,
+                                                    image: CachedNetworkImageProvider(
+                                                        "https://th.bing.com/th/id/OIP.Ix6XjMbuCvoq3EQNgJoyEQHaFj?pid=ImgDet&rs=1")),
+                                                color: Colors.red,
+                                                borderRadius:
+                                                    BorderRadius.circular(10)),
+                                            height: 50,
+                                            width: 50,
+                                          ),
+                                        ]),
+                                  ),
+                                ),
                               ))
                         ],
                       ),
@@ -118,7 +166,7 @@ class CityDetailScreen extends StatelessWidget {
                             ],
                           )),
                     ),
-                    Divider(),
+                    const Divider(),
                     Container(
                       margin: const EdgeInsets.symmetric(
                         horizontal: 30,
@@ -177,7 +225,7 @@ class CityDetailScreen extends StatelessWidget {
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 20,
                           ),
                           Text(
@@ -198,11 +246,19 @@ class CityDetailScreen extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(15),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                SizedBox(width: 150,height: 55,child: OutlinedButton(onPressed: (){}, child: Text("Book"))),
-                SizedBox(width: 150,height: 55,child: ElevatedButton(onPressed: (){}, child: Text("Book")))
-              ]),
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    SizedBox(
+                        width: 150,
+                        height: 55,
+                        child: OutlinedButton(
+                            onPressed: () {}, child: const Text("Book"))),
+                    SizedBox(
+                        width: 150,
+                        height: 55,
+                        child: ElevatedButton(
+                            onPressed: () {}, child: const Text("Book")))
+                  ]),
             ),
           ],
         ),

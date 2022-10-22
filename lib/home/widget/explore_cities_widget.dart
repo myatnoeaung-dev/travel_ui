@@ -120,7 +120,7 @@ Widget ExploreCardWidget(BuildContext context) {
                   child: Icon(
                     Icons.favorite_outline,
                     size: 20,
-                    color: Theme.of(context).colorScheme.onSurface,
+                    color: Theme.of(context).colorScheme.onPrimary,
                   )),
             ),
           ],

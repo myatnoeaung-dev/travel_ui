@@ -30,16 +30,14 @@ class BodyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Container(
-        child: ListView(
-          children: [
-            HeaderAppBar(context),
-            SearchWidget(context),
-            CategoryItems(context),
-            ExploreCitiesWidget(context),
-            const PopularCategoriesWidget()
-          ],
-        ),
+      child: ListView(
+        children: [
+          HeaderAppBar(context),
+          SearchWidget(context),
+          CategoryItems(context),
+          ExploreCitiesWidget(context),
+          const PopularCategoriesWidget()
+        ],
       ),
     );
   }
