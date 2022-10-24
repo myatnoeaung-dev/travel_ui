@@ -6,14 +6,14 @@ import 'package:travel_ui/detail/city_detail_screen.dart';
 
 Widget ExploreCitiesWidget(BuildContext context) {
   return Container(
-    margin: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
+    margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 16),
     child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
       Text(
         "Explore Cities",
         style: context.titleLarge!.copyWith(fontWeight: FontWeight.w900),
       ),
       const SizedBox(
-        height: 20,
+        height: 10,
       ),
       SizedBox(
         height: 30,
@@ -39,7 +39,7 @@ Widget ExploreCitiesWidget(BuildContext context) {
         ),
       ),
       const SizedBox(
-        height: 20,
+        height: 10,
       ),
       Container(
         height: 220,

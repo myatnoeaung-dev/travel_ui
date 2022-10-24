@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:core_module/extensions.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 
 import '../home/widget/popular_categories_widget.dart';
 
@@ -23,7 +24,7 @@ class CityDetailScreen extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              padding: const EdgeInsets.all(15),
+              padding: const EdgeInsets.fromLTRB(15,0,15,0),
               child: Row(children: [
                 IconButton(
                   onPressed: () {
@@ -174,6 +175,7 @@ class CityDetailScreen extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -181,7 +183,8 @@ class CityDetailScreen extends StatelessWidget {
                                 "Mount Bromo",
                                 style: context.titleLarge!
                                     .copyWith(fontWeight: FontWeight.w900),
-                              ),
+                              ), // runs after the above w/new duration
+
                               Row(
                                 children: [
                                   const Icon(
@@ -252,12 +255,12 @@ class CityDetailScreen extends StatelessWidget {
                         width: 150,
                         height: 55,
                         child: OutlinedButton(
-                            onPressed: () {}, child: const Text("Book"))),
+                            onPressed: () {}, child: const Text("\$850/person"))),
                     SizedBox(
                         width: 150,
                         height: 55,
                         child: ElevatedButton(
-                            onPressed: () {}, child: const Text("Book")))
+                            onPressed: () {}, child: const Text("Book Now")))
                   ]),
             ),
           ],

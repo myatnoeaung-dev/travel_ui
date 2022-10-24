@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 Widget SearchWidget(BuildContext context) {
   return Container(
     
-    margin: EdgeInsets.symmetric(vertical: 20,horizontal: 16),
+    margin: EdgeInsets.symmetric(vertical: 10,horizontal: 16),
     decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.surfaceVariant,
         borderRadius: BorderRadius.all(Radius.circular(10))),
